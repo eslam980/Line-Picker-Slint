@@ -1,0 +1,47 @@
+import { Button, VerticalBox } from "std-widgets.slint";
+
+export struct Code {
+    user:string,
+}
+export component AppWindow inherits Window {
+    in-out property <string> code_property;
+    
+    callback generate_code();
+    
+    width: 500px;
+    height: 500px;
+    padding: 25px;
+
+    VerticalLayout {
+        
+        spacing: 20px;
+
+        Text {
+            width: root.width;
+            color: white;
+            font-size: 24px;
+            horizontal-alignment: center;
+            font-weight: 900;
+            text: "Generate Code !";
+        }
+        
+        Text{
+            width: root.width;
+
+            color: white;
+            horizontal-alignment: center;
+            font-size: 18px;
+            text: code_property;
+        }
+            
+        
+        Button {
+            width: 300px;
+            text: "Generate Code";
+            clicked => { 
+                generate_code(); 
+            }
+        }
+        
+    } 
+}

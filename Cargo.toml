@@ -1,0 +1,26 @@
+[package]
+name = "steam_generator"
+version = "0.1.0"
+authors = ["eslam980 <eslam980Ads@gmail.com>"]
+edition = "2021"
+build = "build.rs"
+description = " A Desktop app that generator codes for your own game"
+icon = ["./icon.png", "./icon@2x.png"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+arboard = "3.3.2"
+rand = "0.8.5"
+slint = "1.4"
+
+[build-dependencies]
+arboard = "3.3.2"
+slint-build = "1.4"
+rand = "0.8.5"
+
+[package.metadata.bundle]
+name = "Steam Code Generator"
+identifier = "io.github.eslam980.steamcodegenerator"
+icon = ["./icon.png", "./icon@2x.png"]
