@@ -12,6 +12,15 @@ fn get_line_at(path: &Path, line_num: usize) -> Result<String, Error> {
     lines.nth(line_num).expect("No line found at that position")
 }
 
+// todo - Create check_dir and overwrite that allow users to input all the text in the file and then they will get it layer
+// fn check_dir(path: &Path) {
+
+// }
+
+// fn overwrite_all(path: &Path, overwrite_text: String) {
+
+// }
+
 pub fn generate_line() -> Result<String, Error> {
     let dir_path = "file.txt";
 
