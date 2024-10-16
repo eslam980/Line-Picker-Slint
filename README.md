@@ -1,5 +1,5 @@
-# Rust-Code-Sample
-the application is still under-developing.
+# line Picker Slint
+A Basic Application made with rust and slint to select a random line in an .txt file then copy it to your clipboard.
 
 ## About
 is a simple app that get a random line from .txt file and put it to your clipboard to use it later.
